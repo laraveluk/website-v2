@@ -5,6 +5,22 @@ Thank you for your interest in contributing to the LaravelUK community website p
 
 The intial project served as platform for building the LaravelUK website and also a platform to help other members learn technologies that they are not familiar with; irrespective of their level of experience. We believe the project has served it's purpose and therefore we have decided switch to implmenting a static website route which will make updating their website quick and easy without the need for unnecesary overheads. We are therefore building the new website with Nuxt (V3) and deploying to Netlify.
 
+## Setup
+Clone the project
+
+Install the dependencies:
+
+```bash
+# yarn
+yarn install
+
+## Development Server
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
+```
+
 ### Contribution Instructions
 If you are new to contibuting to open source projects, please follow the steps below
 - Fork the repository
