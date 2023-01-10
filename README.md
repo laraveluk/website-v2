@@ -3,7 +3,7 @@
 
 Thank you for your interest in contributing to the LaravelUK community website project! This is the second iteration of this project. The intial project was built using the Laravel/Vue stack but since we launched 5 years ago, there has been majpr changes to Laravel and other library versions which has necessitated a rebuild. 
 
-The intial project served as platform for building the LaravelUK website and also a platform to help other members learn technologies that they are not familiar with; irrespective of their level of experience. We believe the project has served it's purpose and therefore we have decided switch to implmenting a static website route which will make updating their website quick and easy without the need for unnecesary overheads. We are therefore building the new website with Nuxt (V3) and deploying to Netlify.
+The intial project served as platform for building the LaravelUK website and also a platform to help other members learn technologies that they are not familiar with; irrespective of their level of experience. We believe the project has served it's purpose and therefore we have decided switch to implmenting a static website route which will make updating their website quick and easy without the need for unnecesary overheads. We are therefore building the new website with [Nuxt] (https://nuxt.com/) (V3) and deploying to Netlify.
 
 ## Setup
 Clone the project
