@@ -16,5 +16,5 @@ export default defineNuxtConfig({
             { name: 'description', content: 'Welcome to Laravel UK a community of Artisans mostly based in the UK' }
           ],
         }
-      }
+      },
 })
