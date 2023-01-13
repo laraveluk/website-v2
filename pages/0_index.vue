@@ -207,6 +207,7 @@ import HeroBanner from "~/components/HeroBanner.vue";
 
 definePageMeta({
   title: 'Home',
-  name: 'Home'
+  name: 'Home',
+  path: '/'
 })
 </script>
