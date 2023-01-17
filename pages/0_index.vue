@@ -203,8 +203,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import HeroBanner from "~/components/HeroBanner.vue";
-
 definePageMeta({
   title: 'Home',
   name: 'Home',

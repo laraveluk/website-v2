@@ -44,12 +44,11 @@
     </article>
   </div>
 </template>
-<script setup lang="ts">
-import HeroBanner from "~/components/HeroBanner.vue";
 
+<script>
 definePageMeta({
   title: 'Slack',
   name: 'Slack',
-  key: '3'
+  path: '/slack'
 })
 </script>
