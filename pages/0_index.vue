@@ -114,7 +114,7 @@
             >
               Read more posts from our
               <a
-                  href="https://laravelphp.uk/blog"
+                  href="/blog"
                   class="mb-2 text-gray-700 no-underline bg-transparent border-0 border-gray-200 border-solid cursor-pointer hover:no-underline"
               >blog</a
               >.
