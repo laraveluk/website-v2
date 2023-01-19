@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <section
+      class="flex flex-col hero text-black bg-no-repeat bg-cover border-0 border-gray-200 border-solid"
+  >
   <div class="border-0 border-gray-200 border-solid md:p-6">
   <header
       data-v-3ae455ef=""
@@ -86,7 +88,7 @@
 
     <div
         class="flex flex-col justify-center items-center p-6 -mt-20 text-center text-white border-0 border-gray-200 border-solid md:-mt-32"
-        style="min-height: 75vh;"
+        style="min-height: 50vh;"
     >
       <h1
           class="mx-0 mt-0 mb-2 text-4xl font-bold border-0 border-gray-200 border-solid md:text-5xl"
@@ -100,8 +102,7 @@
         {{ subtext }}
       </h2>
     </div>
-
-  </div>
+  </section>
 </template>
 
 <script>
@@ -110,6 +111,6 @@ export default {
   props: {
     title: String,
     subtext: String
-  }
+  },
 }
 </script>

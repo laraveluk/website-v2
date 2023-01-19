@@ -3,40 +3,34 @@
       class="flex items-center pb-4 mb-4 leading-6 border-t-0 border-r-0 border-l-0 border-b border-gray-100 border-solid"
       style="border-width: 0px;"
   >
-    <a
-        href="https://laravelphp.uk/profiles/6"
-        class="text-blue-700 bg-transparent border-0 border-gray-200 border-solid cursor-pointer hover:no-underline"
-    ><img
-        src="https://avatars.slack-edge.com/2017-08-13/225908338547_23228610d8b7f84fb120_192.jpg"
-        alt="Lee Crosdale's Avatar"
-        class="mr-6 w-10 max-w-full h-10 rounded-full border-0 border-gray-200 border-solid"
-    /></a>
     <div
         class="flex flex-col w-full text-sm border-0 border-gray-200 border-solid"
     >
+
       <div
           class="flex flex-row items-center border-0 border-gray-200 border-solid"
+          v-for="blogPost in data"
       >
         <div
             class="flex-col flex-grow leading-none border-0 border-gray-200 border-solid"
         >
           <a
-              href="https://laravelphp.uk/blog/post/deciding-on-the-format-of-larahack"
+              :href="blogPost._path"
               class="leading-3 text-gray-700 no-underline bg-transparent border-0 border-gray-200 border-solid cursor-pointer hover:no-underline"
           >
-            Post title
+            {{ blogPost.title }}
           </a>
           <p
               class="my-1 mx-0 font-light leading-3 text-gray-400 border-0 border-gray-200 border-solid"
           >
-            Post Date
+            {{ blogPost.date }}
           </p>
           <div
               class="flex flex-row flex-wrap leading-3 border-0 border-gray-200 border-solid"
           ></div>
         </div>
         <a
-            href="https://laravelphp.uk/blog/post/deciding-on-the-format-of-larahack"
+            :href="blogPost._path"
             class="text-gray-700 no-underline bg-transparent border-0 border-gray-200 border-solid cursor-pointer hover:no-underline"
         ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,3 +47,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const { data } = await useAsyncData('blog', () => queryContent('/').only(['title', 'description', 'date', '_path']).find())
+</script>
